@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        h1,h4{background-color: rgba(255, 255, 255, 0.8); /* Transparent background */;}
+        h4{color: red;}
+        h5{color:whitesmoke }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('img/log2.jpg'); /* Add your background image here */
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.8); /* Transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body><div>
+    <h1>HAPPY TO SEE YOU HERE 😀 😍</h1><br/>
+    <h4>Join a million+ students learning on this site</h4>
+    <h5><marquee direction="right">"Quality skills, One Click at a Time."</marquee></h5>
+</div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username (eg.derrick6)" required>
+            <input type="password" id="password" placeholder="Password (eg.4)" required>
+            <button type="submit">GO</button>
+        </form>
+        <br>
+        <button><a href="https:/wa.me/256751987885">HELP</a></button>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username.length === 6 && password.length === 4) {
+                window.location.href = 'home.html'; // Navigate to home.html
+            } else {
+                alert('KIRABE OGUTWE 🙄. TRY AGAIN');
+            }
+        });
+    </script>
+</body>
+</html>
